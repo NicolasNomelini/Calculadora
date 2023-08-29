@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#itemBackground{
+    background-color: rgba(247, 237, 237, 0.425);
+    margin: 40px;
+    height: 670px;
+}
+
+
+
+#historico{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+#campoHistorico{
+    height: 250px; 
+    overflow: auto; 
+    scroll-behavior: smooth; 
+    margin-top: 10px;
+}
+
+
+
+#calculadora{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.900);
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    border-radius: 30px;
+    padding: 20px;
+}
+#resto{
+    background-color: rgb(252, 249, 249);
+    text-align: right;
+    margin: 5px 0px 10px 5px;
+    padding: 5px;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    width: 200px;
+    color: rgb(0, 0, 0);
+    border: none;
+    text-overflow: ellipsis;
+}
+
+.botao{
+    width: 50px;
+    height: 50px;
+    margin: 1px;
+    font-size: 20px;
+    cursor:pointer;
+    background-color: rgb(33, 33, 34);
+    border:none;
+    color:white;
+    border-radius: 10px;
+}
+.botao:hover{
+    background-color: rgb(56, 55, 55);
+}
+
+
+
+#atribuição{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 25px;
+}
+
+
+
+
+@media screen and (max-width: 1000px){
+   #historico{
+    left: 70%;
+   }
+   #calculadora{
+    left: 30%;
+   }
+}
+@media screen and (max-width: 738px){
+    #historico{
+        top: 110%;
+        left: 50%;
+    }
+    #calculadora{
+        left: 50%;
+    }
+    #itemBackground{
+        height: 900px;
+    }
+    #historico{
+        width: 250px;
+    }
+    #atribuição{
+        top: 147%;
+    }
+}
+@media screen and (max-width: 410px){
+    #itemBackground{
+        margin: 15px;
+    }
+}
